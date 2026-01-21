@@ -213,8 +213,8 @@ export function getCleanProductName(fullName: string): string {
         // Remove complex color/style codes (often uppercase with slash)
         // e.g. "GYBK/ROSADO", "BKBL/AZUL", "NEGRO/GRIS", "GYBK" often at end or before size
         .replace(/\s+[A-Z]+\/[A-Z]+(\s|$)/gi, ' ')   // Remove "WORD/WORD"
-        .replace(/\s+[A-Z]{3,}(\s|$)/g, ' ')         // Remove standalone uppercase codes (>3 chars) like "GYBK" if checking carefully? 
-        // Be careful not to remove valid words. Let's stick to slash pattern and specific context.
+        // Match specific known junk codes instead of all uppercase words
+        // Removed aggressive [A-Z]{3,} rule that was deleting "ELECTRICO", "ROLLO"
 
         // Remove specific SKUE-like codes noticed in screenshots (GYBK, BISCOE, ARCKET if they are models? actually models should stay)
         // User wants "ZAPATILLA SKECHERS ARCKET" but removing "GYBK°43"
