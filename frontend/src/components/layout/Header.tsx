@@ -193,28 +193,9 @@ export function Header({ categories = [], forcedMode }: { categories?: any[], fo
                                                     </div>
                                                 </div>
                                             </div>
-                                        ) : searchQuery.length < 2 ? (
-                                            // Empty State / Trending
-                                            <div className="p-4">
-                                                <div className="flex items-center gap-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
-                                                    <TrendingUp className="h-3 w-3" />
-                                                    Tendencias
-                                                </div>
-                                                <div className="flex flex-wrap gap-2">
-                                                    {["Zapatos de Seguridad", "Cascos", "Polar", "Chaleco Geólogo"].map((term) => (
-                                                        <button
-                                                            key={term}
-                                                            onClick={() => {
-                                                                setSearchQuery(term);
-                                                                inputRef.current?.focus();
-                                                            }}
-                                                            className="px-3 py-1.5 bg-muted/50 hover:bg-primary/10 hover:text-primary text-sm rounded-full transition-colors"
-                                                        >
-                                                            {term}
-                                                        </button>
-                                                    ))}
-                                                </div>
-                                            </div>
+                                        ) : searchQuery.length < 3 ? (
+                                            // Empty State - Don't show confusing hardcoded trends
+                                            null
                                         ) : suggestions.length > 0 ? (
                                             // Results
                                             <>
