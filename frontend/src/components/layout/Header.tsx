@@ -32,7 +32,7 @@ export function Header({ categories = [], forcedMode }: { categories?: any[], fo
     // Debounced search effect
     useEffect(() => {
         const timer = setTimeout(async () => {
-            if (searchQuery.length >= 2) {
+            if (searchQuery.length >= 3) {
                 setIsLoading(true);
                 try {
                     const res = await fetch(`/api/search?q=${encodeURIComponent(searchQuery)}`);

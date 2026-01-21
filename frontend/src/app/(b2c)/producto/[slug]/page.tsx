@@ -1,4 +1,4 @@
-import { fetchWoo, getProductsByIds } from "@/lib/woocommerce";
+import { fetchWoo, getProductsByIds, getCleanProductName } from "@/lib/woocommerce";
 import ProductDetail from "@/components/product/ProductDetail";
 import { notFound } from "next/navigation";
 
@@ -45,12 +45,17 @@ export default async function ProductPage({ params }: PageProps) {
             }
         }
 
-        // Filter out current product ID to avoid duplicate self-reference if desired, 
-        // but typically variants include the set. Let's keep all for now or filter out.
-        // Usually you want to show ALL siblings including self logic is handled in UI.
-
         if (ids.length > 0) {
-            variants = await getProductsByIds(ids);
+            const rawVariants = await getProductsByIds(ids);
+
+            // STRICT FILTERING: Only show variants that match the Base Name
+            // This prevents "Cordon 3x1.5" showing "Cordon 2x1.0" as a variant
+            const currentBaseName = getCleanProductName(product.name);
+
+            variants = rawVariants.filter((v: any) => {
+                const variantBaseName = getCleanProductName(v.name);
+                return variantBaseName === currentBaseName;
+            });
         }
     }
 
