@@ -4,9 +4,6 @@ import CatalogView from "@/components/catalog/CatalogView";
 export const revalidate = 3600;
 
 async function getProducts(categorySlugs?: string[], searchQuery?: string) {
-    // ... logic remains same or simplified ...
-    // Reuse existing logic manually inside component? No, keep it here.
-    // Actually, I'll copy the existing logic from previous file read.
     try {
         let categoryIds: number[] = [];
         let allCats: any[] = [];
@@ -47,7 +44,7 @@ interface PageProps {
     searchParams: Promise<{ categories?: string; category?: string; search?: string }>;
 }
 
-export default async function CatalogoPage({ searchParams }: PageProps) {
+export default async function EmpresaCatalogoPage({ searchParams }: PageProps) {
     const params = await searchParams;
     const searchQuery = params.search;
     const categoriesParam = params.categories || params.category;
@@ -64,7 +61,7 @@ export default async function CatalogoPage({ searchParams }: PageProps) {
             products={products}
             allCategories={allCategories}
             searchQuery={searchQuery}
-            selectedCategorySlug={selectedSlugs[0]} // Pass primary selection
+            selectedCategorySlug={selectedSlugs[0]}
         />
     );
 }

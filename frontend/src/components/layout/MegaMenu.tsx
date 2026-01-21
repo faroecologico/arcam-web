@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ChevronRight, Menu, LayoutGrid } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import { useAppStore } from "@/store/useStore";
 
 interface Category {
     id: number;
@@ -23,10 +24,8 @@ interface MegaMenuProps {
 export default function MegaMenu({ categories = [] }: MegaMenuProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [hoveredCategory, setHoveredCategory] = useState<Category | null>(null);
-
-    // Mock subcategories for demo (WooCommerce API usually needs recursion for this)
-    // In a real implementation, we would organize the flat list into a tree.
-    // For now, we show the flat list on the left and a "Featured" area on the right.
+    const mode = useAppStore((state) => state.mode);
+    const isEmpresa = mode === "empresa";
 
     return (
         <div
@@ -34,10 +33,13 @@ export default function MegaMenu({ categories = [] }: MegaMenuProps) {
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
         >
-            <div className="flex items-center gap-2 cursor-pointer font-medium hover:text-primary py-2">
+            <Link
+                href={isEmpresa ? "/empresa/catalogo" : "/catalogo"}
+                className="flex items-center gap-2 cursor-pointer font-medium hover:text-primary py-2"
+            >
                 <LayoutGrid className="h-5 w-5" />
                 <span>Todas las Categorías</span>
-            </div>
+            </Link>
 
             <AnimatePresence>
                 {isOpen && (
@@ -53,7 +55,7 @@ export default function MegaMenu({ categories = [] }: MegaMenuProps) {
                             {categories.map((cat) => (
                                 <Link
                                     key={cat.id}
-                                    href={`/catalogo?category=${cat.slug}`}
+                                    href={isEmpresa ? `/empresa/catalogo?category=${cat.slug}` : `/catalogo?category=${cat.slug}`}
                                     className={cn(
                                         "flex items-center justify-between px-4 py-3 text-sm transition-colors hover:bg-white dark:hover:bg-slate-800 hover:text-primary",
                                         hoveredCategory?.id === cat.id && "bg-white dark:bg-slate-800 text-primary font-medium"
@@ -75,7 +77,7 @@ export default function MegaMenu({ categories = [] }: MegaMenuProps) {
                                             {hoveredCategory.name}
                                         </h3>
                                         <Link
-                                            href={`/catalogo?category=${hoveredCategory.slug}`}
+                                            href={isEmpresa ? `/empresa/catalogo?category=${hoveredCategory.slug}` : `/catalogo?category=${hoveredCategory.slug}`}
                                             className="text-xs font-medium bg-primary/10 text-primary px-3 py-1 rounded-full hover:bg-primary/20"
                                         >
                                             Ver todo
