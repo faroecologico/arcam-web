@@ -219,40 +219,53 @@ export function Header({ categories = [], forcedMode }: { categories?: any[], fo
                                             // Results
                                             <>
                                                 <div className="px-3 py-2 text-xs font-semibold text-muted-foreground border-b border-border/50">
-                                                    Productos Sugeridos
+                                                    Sugerencias
                                                 </div>
                                                 <div className="py-1">
-                                                    {suggestions.map((product, index) => (
-                                                        <Link
-                                                            key={product.id}
-                                                            href={isEmpresa ? `/empresa/producto/${product.slug}` : `/producto/${product.slug}`}
-                                                            onClick={() => setShowSuggestions(false)}
-                                                            className={`
-                                                                flex items-center gap-4 p-3 rounded-xl transition-all group
-                                                                ${index === selectedIndex ? 'bg-primary/10' : 'hover:bg-muted/50'}
-                                                            `}
-                                                        >
-                                                            <div className="relative h-12 w-12 flex-shrink-0 bg-white rounded-lg overflow-hidden border border-border/50 shadow-sm group-hover:scale-105 transition-transform">
-                                                                <Image
-                                                                    src={product.image}
-                                                                    alt={product.name}
-                                                                    fill
-                                                                    className="object-cover"
-                                                                />
-                                                            </div>
-                                                            <div className="flex-1 min-w-0">
-                                                                <p className="text-sm font-medium text-foreground truncate group-hover:text-primary transition-colors">
-                                                                    {product.name}
-                                                                </p>
-                                                                {product.price && (
-                                                                    <p className="text-xs text-muted-foreground font-mono mt-0.5">
-                                                                        {new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(product.price)}
-                                                                    </p>
+                                                    {suggestions.map((item, index) => {
+                                                        const isCategory = item.type === 'category';
+                                                        const href = isCategory
+                                                            ? (isEmpresa ? `/empresa/catalogo?category=${item.slug}` : `/catalogo?category=${item.slug}`)
+                                                            : (isEmpresa ? `/empresa/producto/${item.slug}` : `/producto/${item.slug}`);
+
+                                                        return (
+                                                            <Link
+                                                                key={`${item.type}-${item.id}`}
+                                                                href={href}
+                                                                onClick={() => setShowSuggestions(false)}
+                                                                className={`
+                                                                    flex items-center gap-3 px-3 py-2 text-sm transition-colors group
+                                                                    ${index === selectedIndex ? "bg-muted text-foreground" : "text-muted-foreground hover:bg-muted hover:text-foreground"}
+                                                                `}
+                                                            >
+                                                                {isCategory ? (
+                                                                    <div className="h-10 w-10 flex items-center justify-center bg-primary/10 rounded-lg text-primary">
+                                                                        <TrendingUp className="h-5 w-5" />
+                                                                    </div>
+                                                                ) : item.image && item.image !== "/placeholder.png" ? (
+                                                                    <div className="relative h-10 w-10 overflow-hidden rounded-lg border bg-white">
+                                                                        <Image src={item.image} alt={item.name} fill className="object-cover" />
+                                                                    </div>
+                                                                ) : (
+                                                                    <div className="h-10 w-10 flex items-center justify-center bg-muted rounded-lg text-muted-foreground">
+                                                                        <Search className="h-4 w-4" />
+                                                                    </div>
                                                                 )}
-                                                            </div>
-                                                            <ChevronRight className={`h-4 w-4 text-muted-foreground transition-transform ${index === selectedIndex ? 'translate-x-1 text-primary' : 'group-hover:translate-x-1'}`} />
-                                                        </Link>
-                                                    ))}
+
+                                                                <div className="flex-1 min-w-0">
+                                                                    <div className="font-medium truncate">{item.name}</div>
+                                                                    {isCategory ? (
+                                                                        <div className="text-xs text-primary font-medium">Categoría</div>
+                                                                    ) : (
+                                                                        <div className="text-xs text-muted-foreground truncate">
+                                                                            {item.price ? `$${parseInt(item.price).toLocaleString("es-CL")}` : "Ver producto"}
+                                                                        </div>
+                                                                    )}
+                                                                </div>
+                                                                <ChevronRight className={`h-4 w-4 text-muted-foreground transition-transform ${index === selectedIndex ? 'translate-x-1 text-primary' : 'group-hover:translate-x-1'}`} />
+                                                            </Link>
+                                                        );
+                                                    })}
                                                 </div>
                                                 <button
                                                     onClick={handleSearch}
