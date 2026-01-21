@@ -2,16 +2,16 @@ const WOO_URL = process.env.NEXT_PUBLIC_WOO_URL;
 const CK = process.env.WC_CONSUMER_KEY;
 const CS = process.env.WC_CONSUMER_SECRET;
 
-if (!WOO_URL || !CK || !CS) {
-    throw new Error("WooCommerce credentials missing in .env.local");
-}
-
 /**
  * Basic Fetcher for WooCommerce REST API
  * @param endpoint e.g. 'products', 'orders'
  * @param params Object with query parameters
  */
 export async function fetchWoo(endpoint: string, params: Record<string, string> = {}) {
+    if (!WOO_URL || !CK || !CS) {
+        throw new Error("WooCommerce credentials missing. URL: " + WOO_URL);
+    }
+
     const url = new URL(`${WOO_URL}/wp-json/wc/v3/${endpoint}`);
 
     // Default filters: Published and In Stock
