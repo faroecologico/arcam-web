@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+frontend/.env.local
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.turbo/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# CSV and data files (opcional, puedes descomentar si no quieres subirlos)
+# *.csv
+# *.json
+# !package.json
+# !package-lock.json
+# !tsconfig.json
+
+# Temporal files
+temp_*/
+*.tmp
+
+# Build files
+dist/
+build/
+
+# Vercel
+.vercel

@@ -1,0 +1,1773 @@
+[
+  {
+    "product_id": 25448,
+    "product_name": "FERR. RENOVADOR DE GOMAS 1 LT",
+    "current_categories": [
+      {
+        "id": 112,
+        "name": "Ferretería General",
+        "slug": "ferreteria-general"
+      }
+    ]
+  },
+  {
+    "product_id": 25438,
+    "product_name": "CAJA ORGANIZADORA WENBOX TRANSPARENTE 61 LTS C/TAPA",
+    "current_categories": [
+      {
+        "id": 113,
+        "name": "Organización y Almacenamiento",
+        "slug": "organizacion-y-almacenamiento"
+      }
+    ]
+  },
+  {
+    "product_id": 25434,
+    "product_name": "SACACORCHO DOBLE PALANCA 17 CMS",
+    "current_categories": [
+      {
+        "id": 214,
+        "name": "Herramientas Manuales",
+        "slug": "herramientas-manuales-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 25411,
+    "product_name": "MICROONDAS MADENSA MANUAL MM28FB 28 LITROS",
+    "current_categories": [
+      {
+        "id": 174,
+        "name": "Electrónica y Conectividad",
+        "slug": "electronica-y-conectividad"
+      }
+    ]
+  },
+  {
+    "product_id": 25409,
+    "product_name": "POLAINA IMPERMEABLE (PAR)",
+    "current_categories": [
+      {
+        "id": 118,
+        "name": "Ropa Impermeable",
+        "slug": "ropa-impermeable"
+      }
+    ]
+  },
+  {
+    "product_id": 25408,
+    "product_name": "CABO DE POSICIONAMIENTO CINTA REGULABLE C/FUNDA",
+    "current_categories": [
+      {
+        "id": 119,
+        "name": "Protección contra Caídas",
+        "slug": "proteccion-contra-caidas"
+      }
+    ]
+  },
+  {
+    "product_id": 25407,
+    "product_name": "CINTURON LINIERO SENCILLO C/APOYO LUMBAR",
+    "current_categories": [
+      {
+        "id": 119,
+        "name": "Protección contra Caídas",
+        "slug": "proteccion-contra-caidas"
+      }
+    ]
+  },
+  {
+    "product_id": 25362,
+    "product_name": "CAJA CEBADORA PARA RODENTICIDAS",
+    "current_categories": [
+      {
+        "id": 122,
+        "name": "Control de Plagas",
+        "slug": "control-de-plagas"
+      }
+    ]
+  },
+  {
+    "product_id": 25361,
+    "product_name": "ALIMENTO PARA PERRO CACHORRO BALANCEADO FULL NUTRITION 15 KILOS",
+    "current_categories": [
+      {
+        "id": 219,
+        "name": "Alimento",
+        "slug": "alimento"
+      }
+    ]
+  },
+  {
+    "product_id": 25360,
+    "product_name": "ALIMENTO PARA PERRO AGILITY ADULTO RAZAS MEDIANAS Y GRANDES 15 KILOS",
+    "current_categories": [
+      {
+        "id": 219,
+        "name": "Alimento",
+        "slug": "alimento"
+      }
+    ]
+  },
+  {
+    "product_id": 25359,
+    "product_name": "ALIMENTO PARA PERRO AGILITY CACHORRO 15 KILOS",
+    "current_categories": [
+      {
+        "id": 219,
+        "name": "Alimento",
+        "slug": "alimento"
+      }
+    ]
+  },
+  {
+    "product_id": 25358,
+    "product_name": "ALIMENTO PARA PERRO BALANCEADO FULL NUTRITION 20 KG",
+    "current_categories": [
+      {
+        "id": 219,
+        "name": "Alimento",
+        "slug": "alimento"
+      }
+    ]
+  },
+  {
+    "product_id": 25357,
+    "product_name": "ALIMENTO PARA PERRO PROTERLINE ADULTO 22 KILOS",
+    "current_categories": [
+      {
+        "id": 219,
+        "name": "Alimento",
+        "slug": "alimento"
+      }
+    ]
+  },
+  {
+    "product_id": 25355,
+    "product_name": "ALIMENTO PARA PERRO AGILITY CACHORRO 3 KILOS",
+    "current_categories": [
+      {
+        "id": 219,
+        "name": "Alimento",
+        "slug": "alimento"
+      }
+    ]
+  },
+  {
+    "product_id": 25354,
+    "product_name": "ALIMENTO PARA PERRO AGILITY ADULTO RAZA PEQUEÑA 3 KILOS",
+    "current_categories": [
+      {
+        "id": 219,
+        "name": "Alimento",
+        "slug": "alimento"
+      }
+    ]
+  },
+  {
+    "product_id": 25352,
+    "product_name": "ALIMENTO PARA PERRO POEMA PERRO ADULTO 20  KILOS",
+    "current_categories": [
+      {
+        "id": 219,
+        "name": "Alimento",
+        "slug": "alimento"
+      }
+    ]
+  },
+  {
+    "product_id": 25351,
+    "product_name": "ALIMENTO PARA GATO BALANCEADO FULL NUTRITION 7,5 KG",
+    "current_categories": [
+      {
+        "id": 219,
+        "name": "Alimento",
+        "slug": "alimento"
+      }
+    ]
+  },
+  {
+    "product_id": 25350,
+    "product_name": "ALIMENTO PARA GATO POEMA URINARY 7 KILOS",
+    "current_categories": [
+      {
+        "id": 219,
+        "name": "Alimento",
+        "slug": "alimento"
+      }
+    ]
+  },
+  {
+    "product_id": 25336,
+    "product_name": "BOTIN SHERPA´S MOD. SH442 NDKTC N°42",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25330,
+    "product_name": "BOTIN SHERPA´S MOD. SH435 N°35",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25328,
+    "product_name": "BOTIN SHERPA´S MOD. SH435 N°45",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25327,
+    "product_name": "BOTIN SHERPA´S MOD. SH435 N°36",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25326,
+    "product_name": "BOTIN SHERPA´S MOD. SH435 N°37",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25323,
+    "product_name": "BOTIN SHERPA´S MOD. SH435 N°44",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25322,
+    "product_name": "BOTIN SHERPA´S MOD. SH435 N°43",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25321,
+    "product_name": "BOTIN SHERPA´S MOD. SH435 N°42",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25319,
+    "product_name": "BOTIN SHERPA´S MOD. SH435 N°40",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25318,
+    "product_name": "BOTIN SHERPA´S MOD. SH435 N°39",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25317,
+    "product_name": "BOTIN SHERPA´S MOD. SH435 N°38",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25316,
+    "product_name": "ENCENDEDOR RONSON TRANSPARENTE",
+    "current_categories": [
+      {
+        "id": 112,
+        "name": "Ferretería General",
+        "slug": "ferreteria-general"
+      }
+    ]
+  },
+  {
+    "product_id": 25301,
+    "product_name": "BOTIN LG-600 ELEKTRON N° 42",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25287,
+    "product_name": "SHAMPOO BALLERINA 750 ML",
+    "current_categories": [
+      {
+        "id": 167,
+        "name": "Baño e Higiene",
+        "slug": "bano-e-higiene"
+      }
+    ]
+  },
+  {
+    "product_id": 25285,
+    "product_name": "RESPIRADOR ERGONIC DESCARTABLE 2870 FFP2 CAJA 20 UN",
+    "current_categories": [
+      {
+        "id": 224,
+        "name": "Protección Respiratoria",
+        "slug": "proteccion-respiratoria"
+      }
+    ]
+  },
+  {
+    "product_id": 25125,
+    "product_name": "LIMPIADOR DESINFECTANTE IGENIX LAVANDA 900 ML",
+    "current_categories": [
+      {
+        "id": 231,
+        "name": "Químicos",
+        "slug": "quimicos"
+      }
+    ]
+  },
+  {
+    "product_id": 25116,
+    "product_name": "BOTIN NAZCA LOA NU 205 N° 44",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25114,
+    "product_name": "BOTIN NAZCA LOA NU 205 N° 42",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25106,
+    "product_name": "SILBATO",
+    "current_categories": [
+      {
+        "id": 161,
+        "name": "Señalización y Seguridad Vial",
+        "slug": "senalizacion-y-seguridad-vial"
+      }
+    ]
+  },
+  {
+    "product_id": 25092,
+    "product_name": "BOTIN P.JACK PJ 514 ADK N°45",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25090,
+    "product_name": "BOTIN P.JACK PJ 514 ADK N°39",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25089,
+    "product_name": "BOTIN P.JACK PJ 513 GDK N°45",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25088,
+    "product_name": "BOTIN P.JACK PJ 513 GDK N°44",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25084,
+    "product_name": "BOTIN P.JACK PJ 513 GDK N°40",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25080,
+    "product_name": "BOTIN P.JACK PJ 517 NDKCW N° 42",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25075,
+    "product_name": "BOTIN P.JACK PJ 514 ADK N°43",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25072,
+    "product_name": "BOTIN P.JACK PJ 514 ADK N°40",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25060,
+    "product_name": "FERRE. CARRO DE CARGA TIPO YEGUA 200 KG",
+    "current_categories": [
+      {
+        "id": 112,
+        "name": "Ferretería General",
+        "slug": "ferreteria-general"
+      }
+    ]
+  },
+  {
+    "product_id": 25047,
+    "product_name": "BOTIN SHERPA´S MOD. SH426 NDKTCW N° 45",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25046,
+    "product_name": "BOTIN SHERPA´S MOD. SH426 NDKTCW N° 44",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25044,
+    "product_name": "BOTIN SHERPA´S MOD. SH426 NDKTCW N° 40",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25043,
+    "product_name": "BOTIN SHERPA´S MOD. SH426 NDKTCW N° 39",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25042,
+    "product_name": "BOTIN SHERPA´S MOD. SH426 NDKTCW N° 38",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25041,
+    "product_name": "BOTIN SHERPA´S MOD. SH426 NDKTCW N° 42",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 25040,
+    "product_name": "BOTIN SHERPA´S MOD. SH426 NDKTCW N° 43",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24993,
+    "product_name": "MUÑEQUERA PORTA HERRAMIENTAS KL-9000",
+    "current_categories": [
+      {
+        "id": 112,
+        "name": "Ferretería General",
+        "slug": "ferreteria-general"
+      }
+    ]
+  },
+  {
+    "product_id": 24890,
+    "product_name": "ZAPATILLA SKECHERS OCUPACIONAL DAXTIN N°41",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24886,
+    "product_name": "ZAPATILLA SKECHERS SQUAD N°40",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24879,
+    "product_name": "ZAPATILLA SKECHERS FAISON SLIP N° 45",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24863,
+    "product_name": "RETRACTIL HALT 3.5 MT HB-3.5 CABLE GALVANIZADO",
+    "current_categories": [
+      {
+        "id": 119,
+        "name": "Protección contra Caídas",
+        "slug": "proteccion-contra-caidas"
+      }
+    ]
+  },
+  {
+    "product_id": 24766,
+    "product_name": "BOTIN NAZCA XR08 N° 40",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24755,
+    "product_name": "BOTIN NAZCA XR08 N° 43",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24752,
+    "product_name": "BOTIN NAZCA XR06 N°45",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24751,
+    "product_name": "BOTIN NAZCA XR06 N°44",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24745,
+    "product_name": "BOTIN NAZCA XR06 N°38",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24744,
+    "product_name": "BOTIN NAZCA XR06 N°37",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24529,
+    "product_name": "BOTIN SKECHERS TREKKER 200256 n° 42",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24522,
+    "product_name": "BOTIN SKECHERS DAMA MILAH COD: 108114 N° 38",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24519,
+    "product_name": "BOTIN SKECHERS TARVER CAFE N°41",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24503,
+    "product_name": "BOTIN SKECHERS STIRLING N° 39",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24485,
+    "product_name": "BOTIN SKECHERS STIRLING N° 40",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24483,
+    "product_name": "BOTIN SKECHERS AMASA BKFS 77208 N°39",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24482,
+    "product_name": "BOTIN SKECHERS AMASA BKFS 77208 N°38",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24477,
+    "product_name": "BOTIN SKECHERS RAYLAN BLK N°44",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24476,
+    "product_name": "BOTIN SKECHERS RAYLAN BLK N°43",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24455,
+    "product_name": "FERR. TIRAFONDO  3/8X 2",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24454,
+    "product_name": "FERR. TIRAFONDO  3/8X 11/2",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24453,
+    "product_name": "FERR. TIRAFONDO  5/16X2 1/2",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24451,
+    "product_name": "FERR. TIRAFONDO  1/4X3",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24445,
+    "product_name": "FERR. TIRAFONDO  1/4X4 UN",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24444,
+    "product_name": "FERR. TIRAFONDO  1/4X2 1/2",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24442,
+    "product_name": "FERR. TIRAFONDO  1/4X1 1/2",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24417,
+    "product_name": "BOTIN POWERFULL P352 ND N° 47",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24415,
+    "product_name": "BOTIN POWERFULL P352 ND N° 45",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24414,
+    "product_name": "BOTIN POWERFULL P352 ND N° 44",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24413,
+    "product_name": "BOTIN POWERFULL P352 ND N° 43",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24412,
+    "product_name": "BOTIN POWERFULL P352 ND N° 42",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24411,
+    "product_name": "BOTIN POWERFULL P352 ND N° 41",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24410,
+    "product_name": "BOTIN POWERFULL P352 ND N° 40",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24292,
+    "product_name": "AGUA BOLLENES RECARGA 12 LTS",
+    "current_categories": [
+      {
+        "id": 166,
+        "name": "Dispensadores de Agua",
+        "slug": "dispensadores-de-agua"
+      }
+    ]
+  },
+  {
+    "product_id": 24291,
+    "product_name": "AGUA BOLLENES ENVASE VACIO",
+    "current_categories": [
+      {
+        "id": 166,
+        "name": "Dispensadores de Agua",
+        "slug": "dispensadores-de-agua"
+      }
+    ]
+  },
+  {
+    "product_id": 24290,
+    "product_name": "AGUA BOLLENES RECARGA  20 LITROS",
+    "current_categories": [
+      {
+        "id": 166,
+        "name": "Dispensadores de Agua",
+        "slug": "dispensadores-de-agua"
+      }
+    ]
+  },
+  {
+    "product_id": 24289,
+    "product_name": "AGUA SOPORTE BASICO",
+    "current_categories": [
+      {
+        "id": 166,
+        "name": "Dispensadores de Agua",
+        "slug": "dispensadores-de-agua"
+      }
+    ]
+  },
+  {
+    "product_id": 24287,
+    "product_name": "BOTIN SHERPA´S MOD. SH406 CDKAC (ANTIACIDO) N° 43",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24286,
+    "product_name": "BOTIN SHERPA´S MOD. SH406 CDKAC (ANTIACIDO) N° 42",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24147,
+    "product_name": "BOTIN SHERPA´S MOD. SH421 BDK N° 45",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24146,
+    "product_name": "BOTIN SHERPA´S MOD. SH421 BDK N° 44",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24142,
+    "product_name": "BOTIN SHERPA´S MOD. SH421 BDK N° 40",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24141,
+    "product_name": "BOTIN SHERPA´S MOD. SH421 BDK N° 39",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24140,
+    "product_name": "BOTIN SHERPA´S MOD. SH421 BDK N° 38",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24139,
+    "product_name": "BOTIN SHERPA´S MOD. SH421 BDK N° 37",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24135,
+    "product_name": "BOTIN SHERPA´S MOD. SH424 CDKTC N° 46",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24134,
+    "product_name": "BOTIN SHERPA´S MOD. SH424 CDKTC N° 45",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24133,
+    "product_name": "BOTIN SHERPA´S MOD. SH424 CDKTC N° 44",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24131,
+    "product_name": "BOTIN SHERPA´S MOD. SH424 CDKTC N° 42",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24128,
+    "product_name": "BOTIN SHERPA´S MOD. SH424 CDKTC N° 39",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24126,
+    "product_name": "BOTIN SHERPA´S MOD. SH424 CDKTC N° 37",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24119,
+    "product_name": "PISC PLASTIKOTE 8000 BLANCA 1/4",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24117,
+    "product_name": "PISC DRENO DE FONDO FLOWMAK 193 MM PARA HORMIGON",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24116,
+    "product_name": "PISC SKIMMER FLOWMAX PARA HORMIGON",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24115,
+    "product_name": "PISC PASTA PISCINA CELESTE 7KG CHILCORROFIN",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24111,
+    "product_name": "PISC PASTA PISCINA BLANCA 7KG CHILCORROFIN",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24109,
+    "product_name": "PISC DRENO DE FONDO 2\" HI",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24105,
+    "product_name": "PISC PASTA PISCINA CELESTE 2KG",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24102,
+    "product_name": "PISC PINTURA PISCINA SIPA CELESTE TINETA",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24100,
+    "product_name": "PISC RETORNO REGULABLE 50MM",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24099,
+    "product_name": "PISC RELOJ HORARIO 24H NKG4-B CHNT",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24098,
+    "product_name": "PISC DRENO DE FONDO ROSCA 2 P/CONCRETO VULCANO",
+    "current_categories": [
+      {
+        "id": 139,
+        "name": "Piscinas",
+        "slug": "piscinas"
+      }
+    ]
+  },
+  {
+    "product_id": 24095,
+    "product_name": "BOTIN HW EXPLORER N° 38",
+    "current_categories": [
+      {
+        "id": 207,
+        "name": "Calzado de Seguridad",
+        "slug": "calzado-de-seguridad"
+      }
+    ]
+  },
+  {
+    "product_id": 24088,
+    "product_name": "REMOVEDOR DE PINTURA 1 LT QUIMICA",
+    "current_categories": [
+      {
+        "id": 137,
+        "name": "Pinturas y Accesorios",
+        "slug": "pinturas-y-accesorios"
+      }
+    ]
+  },
+  {
+    "product_id": 24085,
+    "product_name": "FERR.  BROCA AVELLANADORA 2 PCS FERRETOOLS F3820",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24084,
+    "product_name": "FERR.  BROCA AVELLANADORA 8MM FERRETOOLS F3819",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24083,
+    "product_name": "FERR.  BROCA AVELLANADORA 4 PCS FERRETOOLS F3821",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24082,
+    "product_name": "FERR.  CLAVO CORRIENTE 6\" CAJA 25 KILOS",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24079,
+    "product_name": "FERR.  CABLE COAXIAL TV MTS",
+    "current_categories": [
+      {
+        "id": 112,
+        "name": "Ferretería General",
+        "slug": "ferreteria-general"
+      }
+    ]
+  },
+  {
+    "product_id": 24077,
+    "product_name": "FERR.  BROCA COBALTO 2,5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24076,
+    "product_name": "FERR.  CLAVO CORRIENTE 4\" CAJA 25 KILOS",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24075,
+    "product_name": "FERR.  CLAVO CORRIENTE 3\" CAJA 25 KILOS",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24074,
+    "product_name": "FERR.  CLAVO CORRIENTE 21/2\" CAJA 25 KILOS",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24073,
+    "product_name": "FERR.  CLAVO CORRIENTE 2\" CAJA 25 KILOS",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24072,
+    "product_name": "FERR.  CLAVO CORRIENTE 11/2\" CAJA 25 KILOS",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24069,
+    "product_name": "FERR.  BROCA AVELLANADORA 3 PCS",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24065,
+    "product_name": "FERR.  BROCA COBALTO 12.5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24064,
+    "product_name": "FERR.  BROCA COBALTO 12MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24063,
+    "product_name": "FERR.  BROCA COBALTO 11.5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24062,
+    "product_name": "FERR.  BROCA COBALTO 11MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24061,
+    "product_name": "FERR.  BROCA COBALTO 10.5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24060,
+    "product_name": "FERR.  BROCA COBALTO 10MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24059,
+    "product_name": "FERR.  BROCA COBALTO 9.5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24058,
+    "product_name": "FERR.  BROCA COBALTO 9.0MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24057,
+    "product_name": "FERR.  BROCA COBALTO 8.5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24056,
+    "product_name": "FERR.  BROCA COBALTO 8.0MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24055,
+    "product_name": "FERR.  BROCA COBALTO 7.5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24054,
+    "product_name": "FERR.  BROCA COBALTO 7.0MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24053,
+    "product_name": "FERR.  BROCA COBALTO 6.5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24052,
+    "product_name": "FERR.  BROCA COBALTO 6.0MM DELTA UNIDAD",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24051,
+    "product_name": "FERR.  BROCA COBALTO 5.5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24050,
+    "product_name": "FERR.  BROCA COBALTO 5.0MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24049,
+    "product_name": "FERR.  BROCA COBALTO 4.5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24048,
+    "product_name": "FERR.  BROCA COBALTO 4.0MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24047,
+    "product_name": "FERR.  BROCA COBALTO 3.5MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24046,
+    "product_name": "FERR.  BROCA COBALTO 3.0MM DELTA",
+    "current_categories": [
+      {
+        "id": 215,
+        "name": "Accesorios para Herramientas",
+        "slug": "accesorios-para-herramientas-ferreteria"
+      }
+    ]
+  },
+  {
+    "product_id": 24044,
+    "product_name": "FERR.  CLAVO VOLCANITA 1 5/8 KG",
+    "current_categories": [
+      {
+        "id": 237,
+        "name": "Tabiquería y Yeso Cartón",
+        "slug": "tabiqueria-y-yeso-carton-construccion"
+      }
+    ]
+  },
+  {
+    "product_id": 24043,
+    "product_name": "FERR.  GRAPA GALV 1.1/2\" X KG",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24042,
+    "product_name": "FERR.  CLAVO CORRIENTE 6\" KG",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24038,
+    "product_name": "FERR.  CABLE PARALELO 2X20 AWG BLANCO MTS x deci",
+    "current_categories": [
+      {
+        "id": 112,
+        "name": "Ferretería General",
+        "slug": "ferreteria-general"
+      }
+    ]
+  },
+  {
+    "product_id": 24037,
+    "product_name": "FERR.  FERR. CADENA ESLABON LARGO 10MM X  1/2",
+    "current_categories": [
+      {
+        "id": 112,
+        "name": "Ferretería General",
+        "slug": "ferreteria-general"
+      }
+    ]
+  },
+  {
+    "product_id": 24036,
+    "product_name": "FERR.  GRAPA GALV 1.1/4\" X KG",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24034,
+    "product_name": "FERR.  CLAVO CORRIENTE 5\" KG",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24033,
+    "product_name": "FERR.  CLAVO CORRIENTE 4\" KG",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24032,
+    "product_name": "FERR.  CLAVO CORRIENTE 3\" KG",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24031,
+    "product_name": "FERR.  CLAVO CORRIENTE 2\" KG",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  },
+  {
+    "product_id": 24029,
+    "product_name": "FERR.  CLAVO CORRIENTE 1 1/2\" KG",
+    "current_categories": [
+      {
+        "id": 128,
+        "name": "Fijaciones y Tornillos",
+        "slug": "fijaciones-y-tornillos"
+      }
+    ]
+  }
+]

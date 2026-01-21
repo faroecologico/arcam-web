@@ -1,0 +1,179 @@
+import requests
+import os
+import sys
+import json
+from dotenv import load_dotenv
+import time
+from datetime import datetime
+
+# Fix for Windows console encoding
+sys.stdout.reconfigure(encoding='utf-8')
+
+# Cargar variables de entorno
+load_dotenv()
+
+# Configuración
+BSALE_TOKEN = os.getenv("BSALE_TOKEN")
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+# URLs Base
+BSALE_API_URL = "https://api.bsale.cl/v1"
+
+if not SUPABASE_URL or not SUPABASE_KEY:
+    print("❌ Faltan credenciales de Supabase en .env")
+    sys.exit(1)
+
+# Asegurar que la URL no tenga slash al final
+SUPABASE_URL = SUPABASE_URL.rstrip('/')
+
+def get_bsale_headers():
+    return {
+        "access_token": BSALE_TOKEN,
+        "Content-Type": "application/json"
+    }
+
+def get_supabase_headers():
+    return {
+        "apikey": SUPABASE_KEY,
+        "Authorization": f"Bearer {SUPABASE_KEY}",
+        "Content-Type": "application/json",
+        "Prefer": "resolution=merge-duplicates" # Para Upsert
+    }
+
+def fetch_all_bsale(endpoint, limit=50):
+    """
+    Recupera TODOS los registros de un endpoint de Bsale paginando.
+    """
+    items = []
+    offset = 0
+    
+    print(f"📥 Descargando desde Bsale: {endpoint}...")
+    
+    while True:
+        # Bsale requiere extension .json
+        url = f"{BSALE_API_URL}/{endpoint}.json?limit={limit}&offset={offset}"
+        if "products" in endpoint:
+             url += "&expand=[stocks,product_type]" 
+        
+        try:
+            r = requests.get(url, headers=get_bsale_headers(), timeout=15)
+            if r.status_code != 200:
+                print(f"❌ Error Bsale ({r.status_code}): {r.text}")
+                break
+            
+            data = r.json()
+            chunk = data.get("items", [])
+            if not chunk:
+                break
+                
+            items.extend(chunk)
+            print(f"   - Recibidos {len(chunk)} items (Total: {len(items)})")
+            
+            offset += limit
+            if len(chunk) < limit:
+                break
+            
+        except Exception as e:
+            print(f"❌ Excepción consultando Bsale: {e}")
+            break
+            
+    return items
+
+def supabase_upsert(table, data):
+    """
+    Realiza un UPSERT a la tabla especificada usando la REST API de Supabase.
+    """
+    url = f"{SUPABASE_URL}/rest/v1/{table}"
+    
+    # Headers para Upsert
+    headers = get_supabase_headers()
+    
+    try:
+        r = requests.post(url, headers=headers, json=data)
+        if r.status_code in [200, 201]:
+            return True, None
+        else:
+            return False, r
+    except Exception as e:
+        return False, str(e)
+
+def main():
+    print("🚀 Iniciando Migración Bsale -> Supabase (Vía REST API Light)")
+    
+    # 1. Obtener Stocks primero
+    print("\n📊 --- OBTENIENDO MAPA DE STOCK ---")
+    stocks = fetch_all_bsale("stocks", limit=50)
+    stock_map = {}
+    for s in stocks:
+        qty = int(s.get("quantity", 0))
+        variant_info = s.get("variant", {})
+        vid = variant_info.get("id")
+        if vid:
+            stock_map[vid] = qty
+    print(f"Mapa de stock construido para {len(stock_map)} variantes.")
+
+    # 2. Obtener Variantes
+    print("\n📦 --- SINCRONIZANDO PRODUCTOS + STOCK ---")
+    variants = fetch_all_bsale("variants", limit=50)
+    
+    if not variants:
+        print("⚠️ No hay productos para sincronizar.")
+        return
+
+    data_to_upsert = []
+    
+    for v in variants:
+        bid = v.get("id")
+        sku = v.get("code")
+        name = v.get("description", "Sin Nombre") 
+        url_img = v.get("url_img_1", "")
+        
+        # Buscar stock
+        current_stock = stock_map.get(bid, 0)
+        
+        row = {
+            "bsale_id": bid,
+            "name": name,
+            "sku": sku,
+            "stock_current": current_stock,
+            "updated_at": datetime.now().isoformat()
+        }
+        data_to_upsert.append(row)
+        
+    # 3. Subir
+    print(f"Subiendo {len(data_to_upsert)} registros a Supabase...")
+    
+    batch_size = 100
+    for i in range(0, len(data_to_upsert), batch_size):
+        batch = data_to_upsert[i:i+batch_size]
+        
+        success, response = supabase_upsert("bsale_products", batch)
+        
+        if success:
+             print(f"   ✅ Lote {i//batch_size + 1} subido ({len(batch)} items)")
+        else:
+             print(f"❌ Error subiendo lote {i}: {response}")
+             if isinstance(response, requests.Response):
+                 print(f"Status: {response.status_code}")
+                 print(f"Body: {response.text}")
+                 
+                 if response.status_code == 404:
+                    print("\n🛑 ERROR: La tabla 'bsale_products' no existe (404).")
+                    print("⚠️  Ejecuta este SQL en Supabase y vuelve a intentar:")
+                    print("""
+                    CREATE TABLE bsale_products (
+                        id bigint generated by default as identity primary key,
+                        bsale_id integer unique,
+                        name text,
+                        sku text,
+                        stock_current integer,
+                        updated_at timestamp with time zone default timezone('utc'::text, now())
+                    );
+                    """)
+                    sys.exit(1)
+
+    print("\n🏁 Proceso Terminado.")
+
+if __name__ == "__main__":
+    main()

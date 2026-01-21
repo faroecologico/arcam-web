@@ -1,0 +1,115 @@
+﻿ID,Nombre de Categoria,Ruta Completa,Productos Asociados
+132,Accesorios de Calzado,Accesorios de Calzado,31
+138,Accesorios de Vestuario,Accesorios de Vestuario,223
+,Cintas y Velcros,Accesorios de Vestuario > Cintas y Velcros,0
+,Insumos de Costura,Accesorios de Vestuario > Insumos de Costura,0
+,Telas,Accesorios de Vestuario > Telas,0
+158,Adhesivos y Selladores,Adhesivos y Selladores,125
+120,Anclajes y Tarugos,Anclajes y Tarugos,32
+252,Baño,Baño,10
+253,Accesorios,Baño > Accesorios,10
+167,Baño e Higiene,Baño e Higiene,12
+202,Bolsas y Empaques,Bolsas y Empaques,11
+186,Bolsos y Mochilas,Bolsos y Mochilas,27
+156,Bombas y Presurización,Bombas y Presurización,32
+268,Calzado,Calzado,3
+269,Botas de Agua y Pesca,Calzado > Botas de Agua y Pesca,3
+207,Calzado de Seguridad,Calzado de Seguridad,1092
+170,Carretillas y Transporte,Carretillas y Transporte,25
+173,Cerraduras Digitales,Cerraduras Digitales,4
+162,Cerrajería y Herrajes,Cerrajería y Herrajes,177
+236,Construcción,Construcción,319
+239,Aislación,Construcción > Aislación,12
+256,Cerámicas y Revestimientos,Construcción > Cerámicas y Revestimientos,33
+261,Impermeabilización y Membranas,Construcción > Impermeabilización y Membranas,8
+245,Maderas y Tableros,Construcción > Maderas y Tableros,56
+243,Metales y Perfilería,Construcción > Metales y Perfilería,139
+265,Policarbonato y Techumbres,Construcción > Policarbonato y Techumbres,12
+237,Tabiquería y Yeso Cartón,Construcción > Tabiquería y Yeso Cartón,36
+244,Techumbre y Canaletas,Construcción > Techumbre y Canaletas,23
+122,Control de Plagas,Control de Plagas,18
+166,Dispensadores de Agua,Dispensadores de Agua,5
+212,EPP,EPP,389
+273,Ergonomía y Soporte Lumbar,EPP > Ergonomía y Soporte Lumbar,5
+267,Filtros Respiratorios,EPP > Filtros Respiratorios,30
+222,Protección Auditiva,EPP > Protección Auditiva,27
+216,Protección Facial,EPP > Protección Facial,12
+223,Protección Ocular,EPP > Protección Ocular,96
+224,Protección Respiratoria,EPP > Protección Respiratoria,22
+264,Protección de Brazos,EPP > Protección de Brazos,7
+221,Protección de Cabeza,EPP > Protección de Cabeza,44
+213,Protección de Manos,EPP > Protección de Manos,145
+271,Anticorte,EPP > Protección de Manos > Anticorte,5
+233,Desechables,EPP > Protección de Manos > Desechables,20
+266,Dieléctrico,EPP > Protección de Manos > Dieléctrico,2
+263,Protección de Rodillas,EPP > Protección de Rodillas,1
+226,Electricidad,Electricidad,347
+258,Accesorios,Electricidad > Accesorios,25
+259,Cables y Conductores,Electricidad > Cables y Conductores,9
+257,Canalización,Electricidad > Canalización,32
+262,Componentes,Electricidad > Componentes,19
+255,Enchufes e Interruptores,Electricidad > Enchufes e Interruptores,194
+227,Extensiones y Alargadores,Electricidad > Extensiones y Alargadores,13
+260,Puesta a Tierra,Electricidad > Puesta a Tierra,2
+247,Tableros y Protecciones,Electricidad > Tableros y Protecciones,53
+174,Electrónica y Conectividad,Electrónica y Conectividad,6
+144,Envases y Dispensadores,Envases y Dispensadores,17
+189,Escaleras y Andamios,Escaleras y Andamios,4
+195,Extintores y Contra Incendios,Extintores y Contra Incendios,2
+31,FERRETERÍA,FERRETERÍA,1403
+248,Abrasivos,FERRETERÍA > Abrasivos,190
+215,Accesorios para Herramientas,FERRETERÍA > Accesorios para Herramientas,455
+225,Herramientas Eléctricas,FERRETERÍA > Herramientas Eléctricas,143
+214,Herramientas Manuales,FERRETERÍA > Herramientas Manuales,615
+246,Llaves y Dados,FERRETERÍA > Herramientas Manuales > Llaves y Dados,217
+112,Ferretería General,Ferretería General,2336
+128,Fijaciones y Tornillos,Fijaciones y Tornillos,324
+164,Filtración y Tratamiento de Agua,Filtración y Tratamiento de Agua,4
+210,Gasfitería,Gasfitería,689
+211,Baño y Cocina,Gasfitería > Baño y Cocina,64
+241,Conexiones y Fittings,Gasfitería > Conexiones y Fittings,372
+250,Desagües y Sifones,Gasfitería > Desagües y Sifones,45
+249,Grifería,Gasfitería > Grifería,91
+240,Sellos y Cintas,Gasfitería > Sellos y Cintas,11
+220,Válvulas y Llaves,Gasfitería > Válvulas y Llaves,106
+146,Higiene y Sanitización,Higiene y Sanitización,8
+147,Iluminación,Iluminación,128
+145,Izaje y Sujeción de Carga,Izaje y Sujeción de Carga,35
+230,Limpieza,Limpieza,216
+254,Basureros y Bolsas,Limpieza > Basureros y Bolsas,24
+270,Equipos,Limpieza > Equipos,1
+232,Implementos,Limpieza > Implementos,81
+231,Químicos,Limpieza > Químicos,110
+126,Lubricantes y Químicos Automotrices,Lubricantes y Químicos Automotrices,64
+218,Mascotas,Mascotas,11
+219,Alimento,Mascotas > Alimento,11
+113,Organización y Almacenamiento,Organización y Almacenamiento,1
+192,Papelería y Oficina,Papelería y Oficina,94
+,Laboratorio,Papelería y Oficina > Laboratorio,0
+,Provisiones,Papelería y Oficina > Provisiones,0
+181,Pesca,Pesca,18
+137,Pinturas y Accesorios,Pinturas y Accesorios,429
+139,Piscinas,Piscinas,33
+196,Policarbonato y Techumbres,Policarbonato y Techumbres,1
+172,Portones y Automatización,Portones y Automatización,30
+183,Primeros Auxilios,Primeros Auxilios,11
+119,Protección contra Caídas,Protección contra Caídas,22
+61,ROPA DE TRABAJO,ROPA DE TRABAJO,3056
+217,Camisas y Blusas,ROPA DE TRABAJO > Camisas y Blusas,453
+235,Chalecos y Softshell,ROPA DE TRABAJO > Chalecos y Softshell,215
+228,Chaquetas y Parkas,ROPA DE TRABAJO > Chaquetas y Parkas,619
+242,Delantales y Pecheras,ROPA DE TRABAJO > Delantales y Pecheras,125
+234,Overoles y Buzos,ROPA DE TRABAJO > Overoles y Buzos,258
+208,Pantalones,ROPA DE TRABAJO > Pantalones,598
+62,Poleras,ROPA DE TRABAJO > Poleras,686
+64,Polerones,ROPA DE TRABAJO > Polerones,102
+165,Riego y Jardinería,Riego y Jardinería,116
+188,Ropa Desechable,Ropa Desechable,24
+118,Ropa Impermeable,Ropa Impermeable,70
+209,Ropa Térmica,Ropa Térmica,60
+159,Ropa de Alta Visibilidad,Ropa de Alta Visibilidad,76
+182,Seguridad Electrónica,Seguridad Electrónica,2
+152,Semillas y Jardín,Semillas y Jardín,46
+161,Señalización y Seguridad Vial,Señalización y Seguridad Vial,13
+151,Soldadura y Gas,Soldadura y Gas,46
+185,Sujeción y Abrazaderas,Sujeción y Abrazaderas,34
