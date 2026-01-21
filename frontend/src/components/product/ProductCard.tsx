@@ -88,7 +88,7 @@ export default function ProductCard({ product, isB2B }: { product: Product, isB2
             </Link>
 
             <div className="p-4">
-                <h3 className="line-clamp-2 text-sm font-medium text-foreground dark:text-slate-200 min-h-[40px] leading-tight">
+                <h3 className="line-clamp-3 text-sm font-medium text-foreground dark:text-slate-200 min-h-[60px] leading-tight">
                     <Link href={productLink}>{baseName}</Link>
                 </h3>
 
