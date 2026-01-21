@@ -193,12 +193,13 @@ export function Header({ categories = [], forcedMode }: { categories?: any[], fo
                             < Button
                                 variant="ghost"
                                 size="icon"
-                                className="absolute left-1 top-1/2 -translate-y-1/2 h-8 w-8 text-muted-foreground hover:bg-transparent"
+                                className="absolute left-1 top-1/2 -translate-y-1/2 h-8 w-8 text-muted-foreground hover:bg-transparent z-10"
                                 onClick={handleSearch}
                             >
                                 <Search className="h-4 w-4" />
                             </Button>
                             <input
+                                ref={inputRef}
                                 type="search"
                                 placeholder={isEmpresa ? "Buscar productos por SKU..." : "Buscar ropa de trabajo, EPP..."}
                                 className="w-full rounded-full border border-border bg-muted/40 backdrop-blur-sm pl-10 pr-10 py-2.5 text-sm transition-all focus:bg-background focus:outline-none placeholder:text-muted-foreground/70"
@@ -215,7 +216,7 @@ export function Header({ categories = [], forcedMode }: { categories?: any[], fo
                                         setSuggestions([]);
                                         inputRef.current?.focus();
                                     }}
-                                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+                                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors z-10"
                                 >
                                     <X className="h-4 w-4" />
                                 </button>
@@ -224,7 +225,7 @@ export function Header({ categories = [], forcedMode }: { categories?: any[], fo
 
                         {/* Enhanced Dropdown */}
                         <AnimatePresence>
-                            {isSearchFocused && (
+                            {isSearchFocused && (isLoading || suggestions.length > 0 || (searchQuery.length < 3 && recentSearches.length > 0)) && (
                                 <motion.div
                                     initial={{ opacity: 0, y: 10, scale: 0.98 }}
                                     animate={{ opacity: 1, y: 0, scale: 1 }}
