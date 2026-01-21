@@ -202,11 +202,28 @@ export function getCleanProductName(fullName: string): string {
         // Remove gender variants
         .replace(/\s+(VARON|VARONE|HOMBRE|DAMA|MUJER|UNISEX)/gi, '')
 
-        // Remove numeric sizes
+        // Remove numeric sizes with degree symbol or hash
         .replace(/\s+N[°º]?\s*[0-9]+/gi, '')         // Remove "N° 42", "N 40"
         .replace(/\s+#\s*[0-9]+/gi, '')               // Remove "# 10"
+        .replace(/[°º]\s*[0-9]+/gi, '')              // Remove "°43", "º40" (often attached to previous word like GYBK°43)
 
-        // Remove dimensions/measurements (at end)
+        // Remove codes in parentheses at end (common SKU or ID)
+        .replace(/\s*\(\d+\)\s*$/gi, '')             // Remove "(108057)"
+
+        // Remove complex color/style codes (often uppercase with slash)
+        // e.g. "GYBK/ROSADO", "BKBL/AZUL", "NEGRO/GRIS", "GYBK" often at end or before size
+        .replace(/\s+[A-Z]+\/[A-Z]+(\s|$)/gi, ' ')   // Remove "WORD/WORD"
+        .replace(/\s+[A-Z]{3,}(\s|$)/g, ' ')         // Remove standalone uppercase codes (>3 chars) like "GYBK" if checking carefully? 
+        // Be careful not to remove valid words. Let's stick to slash pattern and specific context.
+
+        // Remove specific SKUE-like codes noticed in screenshots (GYBK, BISCOE, ARCKET if they are models? actually models should stay)
+        // User wants "ZAPATILLA SKECHERS ARCKET" but removing "GYBK°43"
+        // The degree regex above handles "°43", leaving "GYBK". 
+        // We need to clean "GYBK" if it's a color code.
+
+        // Remove known loose junk at end
+        .replace(/\s*-\s*[A-Z0-9]+$/i, '')           // Remove "- SKUE"
+
         // Remove dimensions/measurements (at end) - KEEPing mm/cm as they are usually product specs
         .replace(/\s+\d+(\.\d+)?\s*(m|kg|gr|g|lt|l|ml|cc|mts?|metros?)\s*$/gi, '')
 

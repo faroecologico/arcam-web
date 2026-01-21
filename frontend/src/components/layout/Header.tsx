@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useAppStore } from "@/store/useStore";
-import { Search, ShoppingCart, FileText, Menu, User, LogIn, UserPlus, X, ChevronRight, TrendingUp } from "lucide-react";
+import { Search, ShoppingCart, FileText, Menu, User, LogIn, UserPlus, X, ChevronRight, TrendingUp, Clock } from "lucide-react";
 import DualToggle from "./DualToggle";
 import { Button } from "../ui/button";
 import MegaMenu from "./MegaMenu";
@@ -18,6 +18,8 @@ export function Header({ categories = [], forcedMode }: { categories?: any[], fo
     const openCart = useAppStore((state) => state.openCart);
     const effectiveMode = forcedMode || mode;
     const isEmpresa = effectiveMode === "empresa";
+    const user = useAppStore((state) => state.user);
+    const [recentSearches, setRecentSearches] = useState<string[]>([]);
     const [isUserOpen, setIsUserOpen] = useState(false);
     const [userDropdownTimer, setUserDropdownTimer] = useState<NodeJS.Timeout | null>(null);
     const [searchQuery, setSearchQuery] = useState("");
@@ -28,6 +30,62 @@ export function Header({ categories = [], forcedMode }: { categories?: any[], fo
     const [selectedIndex, setSelectedIndex] = useState(-1);
     const inputRef = useRef<HTMLInputElement>(null);
     const router = useRouter();
+
+    // Load History
+    useEffect(() => {
+        const loadHistory = async () => {
+            // 1. Try API if user logged in
+            if (user?.id) {
+                try {
+                    const res = await fetch(`/api/search/history?user_id=${user.id}`);
+                    if (res.ok) {
+                        const data = await res.json();
+                        // data is array of objects { query: string }
+                        const queries = data.map((d: any) => d.query);
+                        // Deduplicate merge with local or just replace? Replace is cleaner for sync
+                        if (queries.length > 0) {
+                            setRecentSearches(queries);
+                            return;
+                        }
+                    }
+                } catch (e) {
+                    console.error("Failed to load history from API", e);
+                }
+            }
+
+            // 2. Fallback to LocalStorage
+            const stored = localStorage.getItem("arcam_recent_searches");
+            if (stored) {
+                setRecentSearches(JSON.parse(stored));
+            }
+        };
+
+        // Load on mount and when user changes
+        loadHistory();
+    }, [user]);
+
+    const saveSearchToHistory = async (term: string) => {
+        if (!term || term.length < 3) return;
+
+        // 1. Update State & LocalStorage immediately (Responsive UI)
+        const newHistory = [term, ...recentSearches.filter(s => s !== term)].slice(0, 6);
+        setRecentSearches(newHistory);
+        localStorage.setItem("arcam_recent_searches", JSON.stringify(newHistory));
+
+        // 2. Sync to API (Fire and forget)
+        try {
+            fetch('/api/search/history', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    query: term,
+                    user_id: user?.id || null
+                })
+            });
+        } catch (e) {
+            // Ignore background sync errors
+        }
+    };
 
     // Debounced search effect
     useEffect(() => {
@@ -194,8 +252,35 @@ export function Header({ categories = [], forcedMode }: { categories?: any[], fo
                                                 </div>
                                             </div>
                                         ) : searchQuery.length < 3 ? (
-                                            // Empty State - Don't show confusing hardcoded trends
-                                            null
+                                            // Empty State / History
+                                            recentSearches.length > 0 ? (
+                                                <div className="p-4">
+                                                    <div className="flex items-center gap-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+                                                        <Clock className="h-3 w-3" />
+                                                        Búsquedas Recientes
+                                                    </div>
+                                                    <div className="flex flex-col gap-1">
+                                                        {recentSearches.map((term) => (
+                                                            <button
+                                                                key={term}
+                                                                onClick={() => {
+                                                                    setSearchQuery(term);
+                                                                    saveSearchToHistory(term); // Refresh order
+                                                                    // Optionally auto-search immediately
+                                                                    // handleSearch(); // Wait for user or no? Better let them see results dropdown
+                                                                    inputRef.current?.focus();
+                                                                }}
+                                                                className="flex items-center gap-3 px-3 py-2 text-sm text-foreground hover:bg-muted rounded-lg transition-colors text-left group"
+                                                            >
+                                                                <div className="h-8 w-8 flex items-center justify-center bg-muted rounded-md text-muted-foreground group-hover:bg-background">
+                                                                    <Search className="h-4 w-4" />
+                                                                </div>
+                                                                {term}
+                                                            </button>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            ) : null
                                         ) : suggestions.length > 0 ? (
                                             // Results
                                             <>
