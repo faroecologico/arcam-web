@@ -22,6 +22,16 @@ export async function GET(request: Request) {
                 const category = categories[0];
                 console.log(`Found category: ${category.name} (ID: ${category.id})`);
                 products = await getSmartProducts({ category: String(category.id) });
+            } else {
+                // 3. Third attempt: If no categories, search for matching Tags
+                console.log(`No categories found for "${query}", trying tag search...`);
+                const tags = await fetchWoo("products/tags", { search: query, per_page: "1" });
+
+                if (tags.length > 0) {
+                    const tag = tags[0];
+                    console.log(`Found tag: ${tag.name} (ID: ${tag.id})`);
+                    products = await getSmartProducts({ tag: String(tag.id) });
+                }
             }
         }
 
