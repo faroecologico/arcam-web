@@ -252,6 +252,9 @@ export function deduplicateProducts(products: any[]) {
     const groups: Record<string, any> = {};
 
     products.forEach((p) => {
+        // STRICT FILTER: Hide products with 0 or negative price as requested
+        if (!p.price || parseFloat(p.price) <= 0) return;
+
         const baseName = getCleanProductName(p.name);
 
         if (!groups[baseName]) {
