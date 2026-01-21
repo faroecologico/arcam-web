@@ -224,7 +224,16 @@ export function getCleanProductName(fullName: string): string {
         // Remove known loose junk at end
         .replace(/\s*-\s*[A-Z0-9]+$/i, '')           // Remove "- SKUE"
 
+        // Hardware specific cleaning (Ferreteria)
+        .replace(/\s+\d+\s*[xX]\s*\d+\s*([mM]{2}|[cC][mM])?/g, '')  // Remove "6 X 40 MM", "10x50"
+        .replace(/\s+\d+\s*mm/gi, '')                                // Remove "10 mm", "8mm" (simple dimension)
+        .replace(/\s+\d+\s*(un|unid|unidades)/gi, '')                // Remove "50 UN", "100 UNID"
+        .replace(/\s+F\d{4,}/gi, '')                                 // Remove codes like "F2204", "F2203"
+        .replace(/\s+FERRETOOLS/gi, '')                              // Remove "FERRETOOLS" if used inconsistently to allow grouping with generic "TARUGO"
+        .replace(/\s+\d+\s+FERRETOOLS/gi, '')                        // Remove "24 FERRETOOLS" typo-like patterns
+
         // Remove dimensions/measurements (at end) - KEEPing mm/cm as they are usually product specs
+        // UPDATED: Modified strict end anchor to allow trailing spaces or small junk
         .replace(/\s+\d+(\.\d+)?\s*(m|kg|gr|g|lt|l|ml|cc|mts?|metros?)\s*$/gi, '')
 
         // Remove standalone single letters at end (often size indicators)
