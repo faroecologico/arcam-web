@@ -207,7 +207,8 @@ export function getCleanProductName(fullName: string): string {
         .replace(/\s+#\s*[0-9]+/gi, '')               // Remove "# 10"
 
         // Remove dimensions/measurements (at end)
-        .replace(/\s+\d+(\.\d+)?\s*(mm|cm|m|kg|gr|g|lt|l|ml|cc|mts?|metros?)\s*$/gi, '')
+        // Remove dimensions/measurements (at end) - KEEPing mm/cm as they are usually product specs
+        .replace(/\s+\d+(\.\d+)?\s*(m|kg|gr|g|lt|l|ml|cc|mts?|metros?)\s*$/gi, '')
 
         // Remove standalone single letters at end (often size indicators)
         .replace(/\s+[A-Z]$/i, '')

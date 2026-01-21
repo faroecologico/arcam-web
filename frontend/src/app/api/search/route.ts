@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getSmartProducts, getCleanProductName } from "@/lib/woocommerce";
+import { getSmartProducts, getCleanProductName, fetchWoo } from "@/lib/woocommerce";
 
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
@@ -10,8 +10,20 @@ export async function GET(request: Request) {
     }
 
     try {
-        // Fetch products using our smart deduplicated logic
-        const products = await getSmartProducts({ search: query });
+        // 1. First attempt: Search products directly
+        let products = await getSmartProducts({ search: query });
+
+        // 2. Second attempt: If no products, search for matching Categories
+        if (products.length === 0) {
+            console.log(`No products found for "${query}", trying category search...`);
+            const categories = await fetchWoo("products/categories", { search: query, per_page: "1" });
+
+            if (categories.length > 0) {
+                const category = categories[0];
+                console.log(`Found category: ${category.name} (ID: ${category.id})`);
+                products = await getSmartProducts({ category: String(category.id) });
+            }
+        }
 
         // Return simplified data for the dropdown with clean names
         const suggestions = products.slice(0, 6).map((p: any) => ({
